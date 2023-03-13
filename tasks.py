@@ -53,4 +53,31 @@
 #     print(text)
 # Задание 2.5.
 # Напишите программу-калькулятор, которая принимает два числа и оператор (в формате str), производит заданное арифметическое действие и печатает результат в формате: {num1} {operator) {num2) = {result}
-#
+#try:
+    num1 = int(input('Please, enter num1: '))
+    num2 = int(input('Please, enter num2: '))
+except ValueError as e:
+    print(f'No number: {e}')
+    sys.exit()
+operator = str(input('Enter operator -  \'/\', \'*\', \'%\', \'+\', \'-\': '))
+if operator not in '+-*/%':
+    print("No operator")
+    sys.exit()
+result = 0
+if num2 == 0 and operator == '/':
+    try:
+        result = num1 / num2
+    except ZeroDivisionError:
+        print('error/0')
+        sys.exit()
+elif operator == '*':
+    result = num1 * num2
+elif operator == '+':
+    result = num1 + num2
+elif operator == '-':
+    result = num1 - num2
+elif operator == '%':
+    result = num1 % num2
+else:
+    result = num1/num2
+print(f'{num1} {operator} {num2} = {result}')
