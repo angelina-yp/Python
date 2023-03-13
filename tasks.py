@@ -4,12 +4,12 @@
 # user_name=input("Please, enter user name:")
 # print(f"Hello, {user_name}!")
 # 1.3 Напишите программу, которая на входе получает 2 числа, производит с ними арифметическую операцию(на ваше усмотрение), и выводит “Результат = {результат}”.
-# number1=1
-# number1 = int(input('Please, enter first number: '))
-# number2 = int(input('Please, enter second number: '))
-# print(f"Результат= {number1+number2}")
-# print(f"Результат= {number1*number2}")
-# print(f"Результат= {number1-number2}")
+number1=1
+number1 = int(input('Please, enter first number: '))
+number2 = int(input('Please, enter second number: '))
+print(f"Результат= {number1+number2}")
+print(f"Результат= {number1*number2}")
+print(f"Результат= {number1-number2}")
 # # Напишите программу, чтобы вывести:
 # # ** ** ** ** *
 # # *           *
@@ -53,31 +53,32 @@
 #     print(text)
 # Задание 2.5.
 # Напишите программу-калькулятор, которая принимает два числа и оператор (в формате str), производит заданное арифметическое действие и печатает результат в формате: {num1} {operator) {num2) = {result}
-try:
-    num1 = int(input('Please, enter num1: '))
-    num2 = int(input('Please, enter num2: '))
-except ValueError as e:
-    print(f'No number: {e}')
-    sys.exit()
-operator = str(input('Enter operator -  \'/\', \'*\', \'%\', \'+\', \'-\': '))
-if operator not in '+-*/%':
-    print("No operator")
-    sys.exit()
-result = 0
-if num2 == 0 and operator == '/':
-    try:
-        result = num1 / num2
-    except ZeroDivisionError:
-        print('error/0')
-        sys.exit()
-elif operator == '*':
-    result = num1 * num2
-elif operator == '+':
-    result = num1 + num2
-elif operator == '-':
-    result = num1 - num2
-elif operator == '%':
-    result = num1 % num2
-else:
-    result = num1/num2
-print(f'{num1} {operator} {num2} = {result}')
+
+# try:
+#     num1 = int(input('Please, enter num1: '))
+#     num2 = int(input('Please, enter num2: '))
+# except ValueError as e:
+#     print(f'No number: {e}')
+#     sys.exit()
+# operator = str(input('Enter operator -  \'/\', \'*\', \'%\', \'+\', \'-\': '))
+# if operator not in '+-*/%':
+#     print("No operator")
+#     sys.exit()
+# result = 0
+# if num2 == 0 and operator == '/':
+#     try:
+#         result = num1 / num2
+#     except ZeroDivisionError:
+#         print('error/0')
+#         sys.exit()
+# elif operator == '*':
+#     result = num1 * num2
+# elif operator == '+':
+#     result = num1 + num2
+# elif operator == '-':
+#     result = num1 - num2
+# elif operator == '%':
+#     result = num1 % num2
+# else:
+#     result = num1/num2
+# print(f'{num1} {operator} {num2} = {result}')
