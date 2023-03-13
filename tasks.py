@@ -4,20 +4,16 @@
 # user_name=input("Please, enter user name:")
 # print(f"Hello, {user_name}!")
 # 1.3 Напишите программу, которая на входе получает 2 числа, производит с ними арифметическую операцию(на ваше усмотрение), и выводит “Результат = {результат}”.
-<<<<<<< HEAD
-number1=1
 number1 = int(input('Please, enter first number: '))
 number2 = int(input('Please, enter second number: '))
 print(f"Результат= {number1+number2}")
 print(f"Результат= {number1*number2}")
 print(f"Результат= {number1-number2}")
-=======
 # number1 = int(input('Please, enter first number: '))
 # number2 = int(input('Please, enter second number: '))
 # print(f"Результат= {number1+number2}")
 # print(f"Результат= {number1*number2}")
 # print(f"Результат= {number1-number2}")
->>>>>>> 8e3af3c14247eb2adfe57172a073f5ff00fd2272
 # # Напишите программу, чтобы вывести:
 # # ** ** ** ** *
 # # *           *
