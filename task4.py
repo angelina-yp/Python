@@ -1,21 +1,32 @@
 # 4.1. Напишите функцию square, принимающую 1 аргумент — сторону квадрата, и возвращающую 3 значения (с помощью кортежа):
 #      периметр квадрата, площадь квадрата и диагональ квадрата.
-# def square(storona):
-#     return {tuple(storona, storona, storona, storona)}
-#
-# print(2)
-# print(sum(my_kvadrat))
-# print(storona**2)
-# import math
-# num = 2
-# sqrt = math.sqrt(num)
-# print(storona*math.sqrt(num))
+# from math import sqrt
+# def square(a):
+#       p = a * 4
+#       s = a ** 2
+#       d = sqrt(2) * a
+#       i = (p, s, d)
+#       return i
+# a = int(input('Введите сторону квадрата:'))
+# res = square(a)
+# print('Периметр, Площадь, Диагональ - {}'.format(res))
+
 # 4.2. Напишите фукнцию, которая принимает произвольное количество именнованных аргументов и выводит их построчно
 #      в формате аргумент: значение. Например:
 # 	name: John
 # 	last_name: Smith
 # 	age: 35
 # 	position: web developer
+# def info_arg(*arg):
+#     for key, value in sorted(arg.items()):
+#         return key + ": " + str(value)
+#
+# print(info_arg('name', 'John', 'last_name', 'Smith'))
+
+# def my_function(name, lastname):
+#     print(f' {name} {lastname}')
+# my_function('name:', 'John')
+# my_function('last_name:', 'Smith')
 
 # 4.3. Используя лямбда-выражение, из списка my_list = [20, -3, 15, 2, -1, -21] создайте новый список, содержащий только
 #      положительные числа
