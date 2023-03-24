@@ -11,18 +11,16 @@
 # res = square(a)
 # print('Периметр, Площадь, Диагональ - {}'.format(res))
 
-# 4.2. Напишите фукнцию, которая принимает произвольное количество именнованных аргументов и выводит их построчно
+# 4.2. Напишите функцию, которая принимает произвольное количество именнованных аргументов и выводит их построчно
 #      в формате аргумент: значение. Например:
 # 	name: John
 # 	last_name: Smith
 # 	age: 35
 # 	position: web developer
-# def info_arg(*arg):
-#     for key, value in sorted(arg.items()):
-#         return key + ": " + str(value)
-#
-# print(info_arg('name', 'John', 'last_name', 'Smith'))
-
+# def info_arg(**kwargs):
+#     for key, value in kwargs.items():
+#      print(f'{key} : {value}')
+# info_arg(name='John', last_name = 'Smith', age= '35',position = 'web developer')
 # def my_function(name, lastname):
 #     print(f' {name} {lastname}')
 # my_function('name:', 'John')
