@@ -21,10 +21,6 @@
 #     for key, value in kwargs.items():
 #      print(f'{key} : {value}')
 # info_arg(name='John', last_name = 'Smith', age= '35',position = 'web developer')
-# def my_function(name, lastname):
-#     print(f' {name} {lastname}')
-# my_function('name:', 'John')
-# my_function('last_name:', 'Smith')
 
 # 4.3. Используя лямбда-выражение, из списка my_list = [20, -3, 15, 2, -1, -21] создайте новый список, содержащий только
 #      положительные числа
