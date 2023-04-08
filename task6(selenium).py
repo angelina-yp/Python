@@ -12,11 +12,12 @@ browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 # 7.1. Найдите кпопку c текстом "Gold". Попробуйте подобрать как минимум 2 разных XPATH и/или CSS-селекторов
 # http://suninjuly.github.io/xpath_examples
 browser.get('http://suninjuly.github.io/xpath_examples')
-browser.find_elements()
 
-
-
-
-
+a = browser.find_element(By.XPATH,"/html/body/div[2]/button[3]")
+print(a.text)
+a1 = browser.find_element(By.XPATH,"//*[contains(text(), 'Gold')]")
+print(a1.text)
+a3 = browser.find_element(By.CSS,"body > div:nth-child(2) > button:nth-child(3)")
+print(a3.text)
 # 7.2. Найдите элемент с текстом "Fully charged cat". Чем больше разных XPATH и/или CSS-селекторов сможете подобрать, тем лучше
 # http://suninjuly.github.io/cats.html
